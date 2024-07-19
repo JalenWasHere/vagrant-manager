@@ -553,6 +553,8 @@
 - (void)runVagrantAction:(NSString*)action withInstance:(VagrantInstance*)instance {
     NSMutableArray *commandParts = [[NSMutableArray alloc] init];
     
+    [commandParts addObject:@"export LC_ALL=en_US.UTF-8;"];
+    
     if([action isEqualToString:@"up"] && [instance getRunningMachineCount] < instance.machines.count) {
         [commandParts addObject:@"vagrant up"];
         if(instance.providerIdentifier) {
