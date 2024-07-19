@@ -12,6 +12,7 @@
 #import "BookmarkManager.h"
 #import "CustomCommandManager.h"
 #import "CustomProviderManager.h"
+#import "Sparkle/Sparkle.h"
 
 @implementation AppDelegate {
     BOOL isRefreshingVagrantMachines;
