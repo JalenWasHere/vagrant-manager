@@ -580,9 +580,7 @@
     } else {
         return;
     }
-    
-    [commandParts addObject:@"--no-color"];
-    
+        
     NSString *command = [commandParts componentsJoinedByString:@" "];
     
     NSTask *task = [[NSTask alloc] init];
