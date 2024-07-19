@@ -1,6 +1,8 @@
-platform :osx, '10.8'
+platform :osx, '10.13'
 
 target "Vagrant Manager" do
-  pod 'Sparkle'
+  use_frameworks!
+  
+  pod 'Sparkle', '~> 2.6'
 end
 
