@@ -306,6 +306,7 @@
 		B6AC85BFC2445FC5F426BB3C /* Pods-Vagrant Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagrant Manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vagrant Manager/Pods-Vagrant Manager.debug.xcconfig"; sourceTree = "<group>"; };
 		C7624BDAB06533321968B8CB /* Pods-Vagrant Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vagrant Manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vagrant Manager/Pods-Vagrant Manager.release.xcconfig"; sourceTree = "<group>"; };
 		F79887402C4AD912008A1995 /* Vagrant Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Vagrant Manager.entitlements"; sourceTree = "<group>"; };
+		F79887412C4AF027008A1995 /* Askpass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Askpass.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +415,7 @@
 		838A3727191F59FE006244FA /* Askpass */ = {
 			isa = PBXGroup;
 			children = (
+				F79887412C4AF027008A1995 /* Askpass.entitlements */,
 				838A372A191F59FE006244FA /* Supporting Files */,
 			);
 			path = Askpass;
@@ -942,7 +944,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Askpass/Askpass.entitlements;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Askpass/Askpass-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -960,7 +964,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Askpass/Askpass.entitlements;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Askpass/Askpass-Prefix.pch";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1002,7 +1008,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1058,7 +1064,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
